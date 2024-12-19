@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI';
+}
+
+/* navbar */
+nav {
+    background-color: rgb(53, 27, 83);
+    display: flex;
+    width: 100%;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav div img {
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: grey;
+    margin-left: 40px;
+}
+
+nav div a {
+    text-decoration: none;
+    color: rgb(223, 213, 213);
+    background-color: rgb(117, 35, 110);
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 13px 15px;
+    font-weight: bold;
+    transition: 0.7s ease ;
+}
+
+nav div a:hover {
+    background-color: rgba(139, 88, 187, 0.607);
+    border-radius: 10px;
+    color: black;
+}
+
+nav div h1 {
+    margin-right: 40px;
+    font-size: 35px;
+    color: white;
+    
+}
+
+@media (max-width: 700px) {
+    nav div a {
+        display: none;
+    }
+}
+
+/* space dibelakang navbar */
+.space1 {
+    height: 80px;
+    background-color: black;
+}
+
+/* background video  */
+header {
+    width: 100%;
+    height: 90vh;
+}
+
+.bg-video {
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    object-fit: cover;
+}
+
+/* content 1 diatas background video */
+.content1 {
+    z-index: 99;
+    color: white;
+    place-items: center;
+    width: 90%;
+    height: 80vh;
+    background-color: #fefefe54;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 50px;
+}
+
+.content1 h1 {
+    padding-top: 20px;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.content1 p {
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: justify;
+    font-size: 3vh;
+    color: white;
+}
+
+.content1 a {
+    text-decoration: none;
+    padding: 15px 20px;
+    background-color: rgb(53, 27, 83);
+    color: #fefefe;
+    font-weight: bold;
+    border-radius: 20px;
+    display: flex;
+    transition: all 0.3s ease;
+}
+
+.content1 a:hover {
+    background-color: rgb(45, 20, 74);
+    transform: scale(1.05);
+}
+
+.content1 h3 {
+    display: flex;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .content1 h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .content1  {
+        overflow-y: scroll;
+        scrollbar-width: none;
+    }
+    .content1 h3 {
+        font-size: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+@media (max-with: 835px) {
+    .content1 p {
+        font-size: 2.5vh;
+    }
+    .content1 a {
+        font-size: 5px;
+    }
+}
+
+/* content 2 background  */
+.content2 {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: #fefefe;
+}
+
+.content21 {
+    position: relative;
+    place-items: center;
+}
+
+/* table di samping kiri */
+.tabel {
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-family: 'Segoe UI';
+    color: black;
+    border-collapse: collapse;
+    background-color: rgba(76, 68, 129, 0.169);
+}
+
+.tabel td {
+    border: 1px solid black;
+    padding-right: 10px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* bagian gambar dan judul tabel  */
+.tabel2 {
+    text-align: center;
+}
+
+.tabel2>img {
+    height: 250x;
+    width: 150px;
+    margin: 10px 5px;
+}
+
+.tabel2>p {
+    font-weight: bold;
+    size: 20px;
+    background-color: rgba(75, 75, 159, 0.744);
+}
+
+/* isi di konten 2 sebelah kanan  */
+.content22 {
+    margin: 18px 30px;
+    width: 75%;
+}
+
+.content22 p {
+    text-align: justify;
+}
+
+@media (max-width: 1100px) {
+    .content2 {
+        overflow: scroll;
+        scrollbar-width: none;
+        display: block;
+    }
+
+    .content22 {
+        width: 90%;
+    }
+    
+    .content2p {
+        padding-bottom: 20px;
+    }
+}
+
+/* navbar 2 */
+.nav2 {
+    background-color: rgb(53, 27, 83);
+    display: flex;
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav2 img {
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-style: solid;
+    border-color: grey;
+}
+
+@media (max-width: 570px) {
+    .nav2 img {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+/* content 3  */
+
+.content3 {
+    display: flex;
+    justify-content: center;
+}
+
+.content3 div {
+    margin: 30px;
+}
+
+.content3 div img {
+    height: 20vh;
+    width: 20vh;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: gray;
+}
+
+@media (max-width:880px) {
+
+    .content3 div {
+        margin: 10px;
+    }
+
+    .content3 div img {
+        height: 10vh;
+        width: 10vh;
+    }
+
+    .content3 div table td {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI';
+}
+
+body {
+    background-color: rgba(76, 68, 129, 0.169);
+}
+
+/* navbar  */
+nav {
+    background-color: rgb(53, 27, 83);
+    display: flex;
+    width: 100%;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav div img {
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: grey;
+    margin-left: 40px;
+}
+
+nav div a {
+    text-decoration: none;
+    color: rgb(223, 213, 213);
+    background-color: rgb(117, 35, 110);
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 13px 15px;
+    font-weight: bold;
+    transition: 0.7s ease ;
+}
+
+nav div a:hover {
+    background-color: rgba(139, 88, 187, 0.607);
+    border-radius: 10px;
+    color: black;
+}
+
+nav div h1 {
+    margin-right: 40px;
+    font-size: 35px;
+    color: white;
+    
+}
+
+@media (max-width: 700px) {
+    nav div a {
+        display: none;
+    }
+}
+
+/* space dibelakang navbar */
+.space1 {
+    height: 100px;
+}
+
+/* setting cv  */
+
+.bg-cv {
+    width: 70%;
+    margin: auto;
+    background-color: #fefefe;
+    padding: 20px;
+    height: 125vh;
+}
+
+.head {
+    place-items: center;
+}
+
+.head img {
+    height: 90px;
+    width: 90px;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: black;
+    margin-bottom: 20px;
+}
+
+.head h1 {
+    margin-bottom: 10px;
+}
+
+.head h2 {
+    margin-bottom: 10px;
+}
+
+.contact hr {
+    border-style: solid;
+    background-color: rgb(33, 30, 30);
+    height: 2px;
+}
+
+.contact p {
+    text-align: center;
+    font-size: 17px;
+}
+
+.profil, .pengalaman, .pendidikan, .keahlian {
+    margin-top: 20px;
+}
+
+.profil p, .pengalaman ul, .pendidikan div {
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.pengalaman ul li {
+    margin-left: 20px;
+}
+
+.keahlian ul {
+    display: flex;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.keahlian ul li {
+    list-style-type: none;
+    margin: 10px;
+    background-color: rgba(83, 13, 148, 0.813);
+    padding: 8px 20px;
+    border-radius: 5px;
+    color: #fefefe;
+}
+
+.bottom {
+    height: 20px;
+}
